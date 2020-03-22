@@ -14,6 +14,7 @@ tidy_sst_tables = function(s,conf) {
     dt = s[[i]]
     cfg = conf$tables[[i]]
     if(!is.null(cfg$droprows)) dt = dt[-cfg$droprows,]
+    if(!is.null(cfg$droprows_rev)) dt=dt[(nrow(dt):1)[-cfg$droprows_rev]]
     
     colnames(dt) = cfg$colnames
     dt[] = lapply(seq_len(ncol(dt)),function(j_col) {

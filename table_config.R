@@ -5,7 +5,8 @@ tables =list(
   ),
   tests = list(
     colnames = c("time","tested","positives","positve_pct"),
-    coltypes = c("ts1" ,"int"     ,"int",    "pct")
+    coltypes = c("ts1" ,"int"     ,"int",    "pct"),
+    droprows_rev =c(1)
   ),
   hospitalized_region = list(
     colnames = c("region","all","icu","resp"),
