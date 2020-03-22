@@ -1,0 +1,7 @@
+README
+
+run read_sst.R
+sst_source.R and table_config.R must be present in same directory.
+
+
+LICENSE MIT
